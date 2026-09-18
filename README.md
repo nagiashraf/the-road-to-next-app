@@ -27,3 +27,7 @@ Video: 28
 ### Pages
 
 Video: 32
+
+### Dynamic Routes
+
+Video: 33
