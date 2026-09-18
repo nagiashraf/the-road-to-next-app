@@ -36,6 +36,10 @@ Video: 33
 
 Video: 34
 
+### Layouts
+
+Video: 37
+
 ### Tips and Tricks
 
 - Path Constants: `<Link href={ticketsPath()}>` instead of `<Link href="/tickets"`>
