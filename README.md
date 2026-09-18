@@ -35,3 +35,9 @@ Video: 33
 ### Link Components
 
 Video: 34
+
+### Tips and Tricks
+
+- Path Constants: `<Link href={ticketsPath()}>` instead of `<Link href="/tickets"`>
+
+  - Video: 36
