@@ -31,3 +31,7 @@ Video: 32
 ### Dynamic Routes
 
 Video: 33
+
+### Link Components
+
+Video: 34
