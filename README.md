@@ -70,4 +70,10 @@ Videos: 60 -> 63
 
 ### Data Fetching
 
-Video: 64
+Video: 64 -> 66
+
+### Streaming
+
+Video: 67 and 68
+
+**Note**: The loaded data should be wrapped in the `Suspense` component. That's why we extract a component where we fetch the data and wrap it in `Suspense`.
