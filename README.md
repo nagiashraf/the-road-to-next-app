@@ -53,3 +53,21 @@ Video: 37
 - Path Constants: `<Link href={ticketsPath()}>` instead of `<Link href="/tickets"`>
 
   - Video: 36
+
+## Server Components
+
+### Server Components vs Client Components
+
+Videos: 60 -> 63
+
+**Note**:
+
+- Components are server components by default.
+- Client components are for hooks and interactions, i.e. click events.
+- If a component is a client component, all of its children are rendered on the client.
+  - Exception: A server component that is composed into a client component is rendered on the server.
+- Client components are rendered on the server and rendered again on the client.
+
+### Data Fetching
+
+Video: 64
