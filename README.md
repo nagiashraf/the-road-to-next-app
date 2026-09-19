@@ -48,6 +48,12 @@ Video: 34
 
 Video: 37
 
+### Loading Route
+
+Video: 69
+
+**Note**: The loading route is like wrapping the whole page component in a `<Suspense>`, while `suspense` provides more fine-grained control over which parts of the page should be streamed.
+
 ### Tips and Tricks
 
 - Path Constants: `<Link href={ticketsPath()}>` instead of `<Link href="/tickets"`>
