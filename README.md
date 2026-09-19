@@ -60,6 +60,10 @@ Video: 70 and 71
 
 **Note**: For more fine-grained control over which parts of the page should render an error place holder, use the react-error-boundary package, however, it doesn't have access to the Error object.
 
+### Not Found Route
+
+Video: 72
+
 ### Tips and Tricks
 
 - Path Constants: `<Link href={ticketsPath()}>` instead of `<Link href="/tickets"`>
