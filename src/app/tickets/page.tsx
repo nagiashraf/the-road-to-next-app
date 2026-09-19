@@ -1,16 +1,6 @@
 import { Heading } from "@/components/heading";
-import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { initialTickets } from "@/data";
-import { ticketPath } from "@/paths";
-import { LucideCircleCheck, LucideFileText, LucidePencil } from "lucide-react";
-import Link from "next/link";
-import { ReactElement } from "react";
-
-const TICKET_ICONS: {[key: string]: ReactElement} = {
-  OPEN: <LucideFileText />,
-  IN_PROGRESS: <LucidePencil />,
-  DONE: <LucideCircleCheck />,
-};
+import { TicketItem } from "@/features/ticket/components/ticket-item";
 
 const TicketsPage =() => {
   return (
@@ -19,24 +9,7 @@ const TicketsPage =() => {
 
       <div className="flex-1 flex flex-col items-center gap-y-4 animate-fade-in-from-top">
         {initialTickets.map((ticket) => (
-          <Card key={ticket.id} className="w-full max-w-105">
-            <CardHeader>
-              <CardTitle className="flex items-center gap-x-2">
-                <span>{TICKET_ICONS[ticket.status]}</span>
-                <h3 className="text-lg font-semibold truncate">{ticket.title}</h3>
-              </CardTitle>
-            </CardHeader>
-            <CardContent>
-              <span className="line-clamp-3 whitespace-break-spaces">
-                {ticket.content}
-              </span>
-            </CardContent>
-            <CardFooter>
-              <Link href={ticketPath(ticket.id)} className="text-sm underline">
-                View
-              </Link>
-            </CardFooter>
-          </Card>
+          <TicketItem key={ticket.id} ticket={ticket} />
         ))}
       </div>
     </div>

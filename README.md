@@ -8,7 +8,7 @@
 
 Video: 24
 
-### Project Structure
+### Initial Project Structure
 
 Video: 26
 
@@ -21,6 +21,14 @@ Videos: 30 and 38
 ## Deploy to Vercel
 
 Video: 28
+
+## Project Structure
+
+### Features Folder
+
+Videos: 54 -> 58
+
+**Note**: The `features` folder is for domain-specific code and the `components` folder is for reusable components across pages and features.
 
 ## Routing
 
