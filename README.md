@@ -40,6 +40,12 @@ Video: 74
 
 Video: 75
 
+**Note**: To open Prisma Studio (a database explorer), run `npx prisma studio`.
+
+### Schema
+
+Video: 76
+
 ## Routing
 
 ### Pages
