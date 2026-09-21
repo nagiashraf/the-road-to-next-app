@@ -52,6 +52,10 @@ Videoes: 79 and 81
 
 **Note**: Run `npx prisma generate` To generate the Prisma Client.
 
+### Queries
+
+Video: 80
+
 ## Routing
 
 ### Pages
