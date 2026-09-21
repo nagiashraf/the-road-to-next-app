@@ -30,6 +30,16 @@ Videos: 54 -> 58
 
 **Note**: The `features` folder is for domain-specific code and the `components` folder is for reusable components across pages and features.
 
+## Connect to Supabase
+
+Video: 74
+
+## Prisma
+
+### Installation (v5)
+
+Video: 75
+
 ## Routing
 
 ### Pages
