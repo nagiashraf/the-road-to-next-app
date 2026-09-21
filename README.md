@@ -1,6 +1,6 @@
 # The Road to Next Course
 
-***Live demo***: https://the-road-to-next-app-lilac.vercel.app
+***Live demo***: <https://the-road-to-next-app-lilac.vercel.app>
 
 ## Create Next App
 
@@ -45,6 +45,12 @@ Video: 75
 ### Schema
 
 Video: 76
+
+### Prisma Client and Generated Types
+
+Videoes: 79 and 81
+
+**Note**: Run `npx prisma generate` To generate the Prisma Client.
 
 ## Routing
 
@@ -92,7 +98,7 @@ Video: 72
 
 Videos: 60 -> 63
 
-**Note**:
+**Notes**:
 
 - Components are server components by default.
 - Client components are for hooks and interactions, i.e. click events.
