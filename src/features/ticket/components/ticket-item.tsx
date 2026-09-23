@@ -3,9 +3,10 @@ import { ticketPath } from "@/paths";
 import Link from "next/link";
 import { TICKET_ICONS } from "../constants";
 import { Ticket } from "@/generated/prisma/client";
-import { LucideSquareArrowOutUpRight } from "lucide-react";
+import { LucideSquareArrowOutUpRight, LucideTrash } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { clsx } from "clsx";
+import { deleteTicket } from "../actions/delete-ticket";
 
 type TicketItemProps = {
   ticket: Ticket;
@@ -19,6 +20,14 @@ const TicketItem = ({ ticket, isDetail }: TicketItemProps) => {
         <LucideSquareArrowOutUpRight className="w-4 h-4" />
       </Link>
     </Button>
+  );
+
+  const deleteButton = (
+    <form action={deleteTicket.bind(null, ticket.id)}>
+      <Button variant="outline" size="icon">
+        <LucideTrash className="w-4 h-4" />
+      </Button>
+    </form>
   );
 
   return (
@@ -41,7 +50,7 @@ const TicketItem = ({ ticket, isDetail }: TicketItemProps) => {
           </span>
         </CardContent>
       </Card>
-      {!isDetail && detailButton}
+      {isDetail ? deleteButton : detailButton}
     </div>
   );
 };

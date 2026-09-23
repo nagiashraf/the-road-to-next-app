@@ -74,6 +74,12 @@ Video: 33
 
 Video: 34
 
+### redirect
+
+Video: 85
+
+**Note**: Use the `redirect('/path')` function to redirect to another page.
+
 ### Layouts
 
 Video: 37
@@ -113,6 +119,7 @@ Videos: 60 -> 63
 - If a component is a client component, all of its children are rendered on the client.
   - Exception: A server component that is composed into a client component is rendered on the server.
 - Client components are rendered on the server and rendered again on the client.
+- To test whether a component is a server component or a client component, use `console.log()` and check whether the output is in the terminal or the browser.
 
 ### Data Fetching
 
@@ -123,3 +130,13 @@ Video: 64 -> 66
 Video: 67 and 68
 
 **Note**: The loaded data should be wrapped in the `Suspense` component. That's why we extract a component where we fetch the data and wrap it in `Suspense`.
+
+## Server Actions
+
+Videos: 83, 84, and 96
+
+**Notes**:
+
+- Server actions can be used in both client and server components.
+
+- The "use server" directive transforms functions to server-side running functions.
